@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story</title>
+    <style>
+        /* 1. Highlight all direct child <p> elements within a <div> with the class "story-content" */
+        .story-content > p {
+            background-color: lightyellow;
+            color: darkblue;
+            font-size: 1.2em;
+            padding: 5px;
+            border: 1px solid darkblue;
+        }
+
+        /* 2. Highlight all <em> elements that are descendants of <blockquote> elements within the story */
+        blockquote em {
+            background-color: lightblue;
+            color: darkred;
+            font-style: normal;
+            padding: 3px;
+            border-radius: 3px;
+        }
+
+        /* 3. Highlight all <h3> elements that are immediately preceded by an <h2> element within the story */
+        h2 + h3 {
+            background-color: lightgreen;
+            color: darkgreen;
+            font-size: 1.4em;
+            padding: 5px;
+            border: 2px solid darkgreen;
+        }
+
+        /* 4. Highlight all <ul> elements that are siblings of <p> elements within the story */
+        p ~ ul {
+            background-color: darkslategray;
+            color: lightgoldenrodyellow;
+            padding: 10px;
+            border: 2px solid lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="story-content">
+        <h1>The Adventure Begins</h1>
+
+        <p>Once upon a time, in a faraway land, there lived a young boy named Jack.</p>
+
+        <blockquote>
+            <p>"It's dangerous to go alone," said the old man. "Take this sword and shield with you."</p>
+            <p>"Thank you, sir," replied Jack.</p>
+        </blockquote>
+
+        <h2>The Quest</h2>
+
+        <p>Jack set out on a quest to defeat the evil dragon that terrorized the kingdom.</p>
+
+        <h3>The Journey</h3>
+
+        <p>On his journey, Jack encountered many challenges and made new friends.</p>
+
+        <ul>
+            <li>He crossed treacherous mountains.</li>
+            <li>He braved dark forests.</li>
+            <li>He sailed across stormy seas.</li>
+        </ul>
+
+        <p>After facing numerous obstacles, Jack finally reached the dragon's lair.</p>
+
+        <h2>The Final Battle</h2>
+
+        <p>With courage and determination, Jack faced the dragon in an epic battle.</p>
+
+        <p>After a fierce struggle, Jack emerged victorious, and peace was restored to the kingdom.</p>
+    </div>
+</body>
+</html>
